@@ -1,52 +1,77 @@
 import { IonIcon } from "@ionic/react";
 import { chevronDown, eyeOutline } from "ionicons/icons";
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 
 const projects = [
   {
-    link: "https://quotesgenerator0024.netlify.app/",
+    link: "https://trendslyfe.netlify.app/",
     imageSrc: "project-1.png",
-    title: "Quotes Generator",
+    title: "E-Commerce Site",
     category: "Web development",
   },
   {
-    link: "https://portfolioexample.netlify.app/",
+    link: "https://1digital-clock.netlify.app",
     imageSrc: "project-2.png",
-    title: "Rajashtan foundation",
+    title: "Digital Clock",
     category: "Web development",
   },
   {
-    link: "https://portfolioexample.netlify.app/",
+    link: "https://3dbuilding.netlify.app",
     imageSrc: "project-3.png",
-    title: "Products Gallery",
+    title: "3D Building",
     category: "Web design",
   },
   {
-    link: "https://portfolioexample.netlify.app/",
+    link: "https://check-wheather.netlify.app",
     imageSrc: "project-4.png",
-    title: "Grocery",
+    title: "Wheather App",
     category: "Web development",
   },
   {
-    link: "https://portfolioexample.netlify.app/",
+    link: "https://practice-grocery-ecomm.netlify.app",
     imageSrc: "project-5.png",
-    title: "Furniture Hub",
+    title: "Grocery Website",
     category: "Web Design",
   },
   {
-    link: "https://portfolioexample.netlify.app/",
+    link: "https://dice-rollling-game.netlify.app",
     imageSrc: "project-6.png",
-    title: "Properties",
+    title: "Dice Game",
+    category: "Game",
+  },
+  {
+    link: "https://simplecyrpto-dashboard.netlify.app",
+    imageSrc: "project-7.png",
+    title: "Cyrpto Dashboard",
     category: "Web design",
+  },
+  {
+    link: "https://ikkatbag.netlify.app",
+    imageSrc: "project-8.png",
+    title: "Ikkat Bag",
+    category: "Web design",
+  },
+  {
+    link: "https://gamerockscissorpaper.netlify.app",
+    imageSrc: "project-9.png",
+    title: "Rock Paper Scissor Game",
+    category: "Game",
   },
 ];
 
-const filterTags = ["All","Web development", "Web design", ];
+const filterTags = ["All","Web development", "Web design","Game" ];
 
 const Projects = ({ isActive }) => {
   const [tag, setTag] = useState("All");
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
 
+  useEffect(() => {
+    if (!isActive) {
+      setTag("All");
+    }
+  }, [isActive]);
+
+  
   const handleButtonClick = () => {
     setIsDropdownOpen(!isDropdownOpen);
   };

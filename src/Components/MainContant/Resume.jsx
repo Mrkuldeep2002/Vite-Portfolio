@@ -14,6 +14,7 @@ const Resume = ({ isActive }) => {
     "Chakra UI",
     "Figma",
     "Bootstrap",
+    "java",
     "CSS",
     "HTML",
   ];

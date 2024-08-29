@@ -14,7 +14,7 @@ const Sidebar = () => {
     <div className={`sidebar ${isActive ? "active" : ""}`}>
       <div class="sidebar-info">
         <figure class="avatar-box">
-          <img src="hero-image.png" alt="Manish Sharma" width="80" />
+          <img src="profile4.png" alt="Manish Sharma" width="80" />
         </figure>
 
         <div class="info-content">

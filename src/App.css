@@ -72,7 +72,7 @@
   --fs-5: 15px;
   --fs-6: 14px;
   --fs-7: 13px;
-  --fs-8: 11px;
+  --fs-8: 15px;
 
   /* font-weight */
   --fw-300: 300;
@@ -343,7 +343,7 @@ main {
 
 .avatar-box {
   /* background: var(--bg-gradient-onyx); */
-  filter: hue-rotate(550deg) sepia(1) saturate(3);
+  /* filter: hue-rotate(550deg) sepia(1) saturate(3); */
   border-radius: 20px;
 }
 
@@ -486,7 +486,7 @@ main {
 .navbar-list {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
+  justify-content: space-around ;
   align-items: center;
   padding: 0 10px;
 }
